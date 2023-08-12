@@ -11,6 +11,7 @@
 int main(void)
 {
 	int n = 0;
+	int ch = 0;
 
 	while (n < 10)
 	{
@@ -18,10 +19,10 @@ int main(void)
 		n++;
 	}
 
-	while (n < 6)
+	while (ch < 6)
 	{
-		putchar(n + 'a');
-		n++;
+		putchar(ch + 'a');
+		ch++;
 	}
 	putchar('\n');
 
