@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: Print all alphabet letters in lowercase then uppercase
+ * Description: Print all alphabet in reverse
  *
  * Return: Always 0 (Success)
 */
@@ -13,3 +13,11 @@ int main(void)
 	char ch = 'z';
 
 	while (ch >= 'a')
+	{
+		putchar(ch);
+		ch--;
+	}
+	putchar('\n');
+
+	return (0);
+}
