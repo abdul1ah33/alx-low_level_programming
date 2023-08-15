@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphapet - utilitize on _putchar function to print
+ * print_alphabet - utilitize on _putchar function to print
  *			the alphapet a - z
 */
 
