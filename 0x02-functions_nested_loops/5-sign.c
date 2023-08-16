@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * print_sign - print + if p and - if n , 0
+ * print_sign - print + if n is greter than zero,
+ *		0 if n is zero and - if n is less
+ *		than zero.
  *
- * @c: takes integer type input for function.
+ * @n: takes integer input for function.
  *
  * Return: return 1 if +, 0 if 0, -1 if -
 */
@@ -15,7 +17,7 @@ int print_sign(int n)
 		_putchar(43);
 		return (1);
 	}
-	else if (n = 0)
+	else if (n == 0)
 	{
 		_putchar(48);
 		return (0);
