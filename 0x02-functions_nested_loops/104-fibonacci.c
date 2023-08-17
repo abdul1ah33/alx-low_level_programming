@@ -9,7 +9,7 @@
 */
 int numlength(int num)
 {
-	int lenght;
+	int lenght = 0;
 
 	if (!num)
 		return (0);
