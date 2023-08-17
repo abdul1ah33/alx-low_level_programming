@@ -12,7 +12,7 @@ int numlength(int num)
 	int length = 0;
 
 	if (!num)
-		return (0);
+		return (1);
 	while (num)
 	{
 		num = num / 10;
@@ -33,7 +33,7 @@ int numlength(int num)
 int main(void)
 {
 	int count, initial0s;
-	unsigned long f1 = 0, f2 = 1, sum, mx = 100000000, f1o = 0, f2o = 0, sumo = 0;
+	unsigned long f1 = 1, f2 = 2, sum, mx = 100000000, f1o = 0, f2o = 0, sumo = 0;
 
 	for (count = 0; count <= 98; count++)
 	{
