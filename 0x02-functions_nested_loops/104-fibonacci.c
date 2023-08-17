@@ -9,14 +9,14 @@
 */
 int numlength(int num)
 {
-	int lenght = 0;
+	int length = 0;
 
 	if (!num)
 		return (0);
 	while (num)
 	{
 		num = num / 10;
-		lenght += 1;
+		length += 1;
 	}
 
 	return (length);
