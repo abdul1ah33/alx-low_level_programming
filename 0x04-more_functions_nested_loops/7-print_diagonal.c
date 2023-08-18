@@ -4,6 +4,7 @@
  * print_diagonal - draws a diagonal line on the terminal
  *
  * @n: the nom of times the \ prints
+ * in the file
 */
 
 void print_diagonal(int n)
@@ -16,7 +17,7 @@ void print_diagonal(int n)
 	{
 		for (postn = 1; postn <= n; postn++)
 		{
-			for (space = 1; space <= postn; space++)
+			for (space = 1; space < postn; space++)
 				_putchar(' ');
 			_putchar(92); /*is equalto '\' char*/
 			_putchar('\n');
