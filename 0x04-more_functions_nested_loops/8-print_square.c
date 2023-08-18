@@ -8,23 +8,19 @@
 
 void print_square(int size)
 {
-	int i;
+	int i, line;
 
 	if (size <= 0)
 		_putchar('\n');
 	else
 	{
-		i = size;
-
-		while (size > 0)
+		for (line = 1; line <= size; line++)
 		{
-			while (i > 0)
+			for (i = 1; i <= size; i++)
 			{
 				_putchar(23);
-				i--;
 			}
 			_putchar('\n');
-			size--;
 		}
 	}
 }
