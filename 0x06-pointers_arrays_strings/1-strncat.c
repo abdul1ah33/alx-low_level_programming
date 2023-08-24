@@ -1,7 +1,14 @@
 #include "main.h"
 
 /**
- * */
+ * _strncat - pointer to destination input
+ *
+ * @dest: djisd
+ * @src: hjjh
+ * @n: fsddfsd
+ *
+ * Return: @dest
+*/
 
 char *_strncat(char *dest, char *src, int n)
 {
