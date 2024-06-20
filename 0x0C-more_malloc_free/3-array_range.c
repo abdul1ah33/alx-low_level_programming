@@ -7,24 +7,23 @@
  * @max: maximum range of values stored and number of elements
  *
  * Return: pointer to the new array
- */
+*/
 int *array_range(int min, int max)
 {
-	int *ptr;
-	int i, size;
+	int *arr, i, n;
 
 	if (min > max)
 		return (NULL);
 
-	size = max - min + 1;
+	n = (max - min) + 1;
 
-	ptr = malloc(sizeof(int) * size);
+	arr = malloc(sizeof(int) * n);
 
-	if (ptr == NULL)
+	if (!arr)
 		return (NULL);
 
-	for (i = 0; min <= max; i++)
-		ptr[i] = min++;
+	for (i = 0; i < n; i++)
+		arr[i] = min + i;
 
-	return (ptr);
+	return (arr);
 }
