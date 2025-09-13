@@ -14,15 +14,15 @@ void print_binary(unsigned long int n)
     {
         if(n & mask)
         {
-            putchar('1');
+            printf("1");
             started = 1;
         }
         else if(started)
         {
-            putchar('0');
+            printf("0");
         }
         mask >>= 1;
     }
     if (!started)
-        putchar('0');
+        printf("0");
 }
